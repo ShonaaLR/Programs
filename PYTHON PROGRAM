@@ -1,0 +1,61 @@
+1.Odd /Even
+PROGRAM:
+a=int(input("Enter the integer:"))
+if(a%2==0):
+    print("Even number")
+else:
+    print("Odd number")
+OUTPUT:
+Enter the integer:3
+Odd number
+2.Student grade Analysis
+90 above
+O
+80 to 90
+A+
+70 to 80
+A
+60 to 70
+B+
+50 to 60 
+B
+<50
+U
+PROGRAM:
+m1=int(input("Enter m1:"))
+m2=int(input("Enter m2:"))
+m3=int(input("Enter m3:"))
+avg=(m1+m2+m3)/3
+if(avg>90):
+    print("O")
+elif(avg>=80 and avg<90):
+    print("A+")
+elif(avg>=80 and avg<70):
+    print("A")
+elif(avg>=70 and avg<60):
+    print("B+")
+elif(avg>=60 and avg<50):
+    print("B")
+else:
+    print("U")
+OUTPUT:
+Enter m1:90
+Enter m2:80
+Enter m3:70
+A+
+
+3.Read a character and check given character is Alphabet, Number, space
+PROGRAM:
+ch=input("Enter the character:")
+if(ch.isalpha()):
+    print("Alphabets")
+elif(ch.isdigit()):
+    print("Number")
+elif(ch.isspace()):
+    print("Space")
+else:
+    print("enter the valid input")
+
+OUTPUT:
+Enter the character:3
+Number
