@@ -1,0 +1,88 @@
+1. Write a Program to find the sum of series 1!+2!+3!...+n!
+
+Program:
+n=int(input("Enter the value of 'n' = "))
+sum = 0
+for i in range(1,n+1):
+    sum+=i
+print("Sum of the series is",sum)
+
+output:
+Enter the value of 'n' = 5
+Sum of the series is 15
+
+2. Write a Program to Find the sum of series 9+99+999+9999.....+N.
+
+program:
+n=int(input("Enter the range of number:"))
+sum=0
+p=9
+for i in range(1,n+1):
+    sum += p
+    p=(p*10)+9
+print("The sum of the series = ",sum)
+
+output:
+Enter the range of number:9
+The sum of the series =  1111111101
+
+
+3. Number Pyramid - Reverse Pyramid of Numbers
+
+program:
+rows=6
+for i in range(1,rows):
+    for j in range(i,0,-1):
+        print(j, end=" ")
+    print(" ")
+    
+output:
+1  
+2 1  
+3 2 1  
+4 3 2 1  
+5 4 3 2 1
+
+4. Pyramid Pattern - Right start pattern of star
+
+program:
+rows=5
+for i in range(0,rows):
+    for j in range(0,i+1):
+        print("*",end=" ")
+    print("\r")
+
+for i in range(rows,0,-1):
+    for j in range(0,i-1):
+        print("*",end=" ")
+    print("\r")
+    
+output:
+
+* 
+
+* * 
+
+* * * 
+
+* * * * 
+
+* * * * * 
+
+* * * * 
+
+* * * 
+
+* * 
+
+* 
+5. Print all the leap year from 1900 - 2000
+
+program:
+year=1900
+while(year<=2000):
+    if (year % 4 == 0 and year % 100 != 0) or( year % 400 == 0):
+        print(year, end = " ")
+    year = year + 1
+output:
+1904 1908 1912 1916 1920 1924 1928 1932 1936 1940 1944 1948 1952 1956 1960 1964 1968 1972 1976 1980 1984 1988 1992 1996 2000
