@@ -1,0 +1,77 @@
+Return the full name of the Person( first name, last name) using function
+PROGRAM:
+def name(x,y):
+    z=x+y
+    print(z)
+first=(input("Enter first name:"))
+second=(input("Enter second name:"))
+print(first,second)
+OUTPUT:
+Enter first name:shonaa
+Enter second name:rajesh
+shonaa rajesh
+Write a python program to convert time hours into minutes
+PROGRAM:
+def convertion(hour):
+    minute=hour*60
+    return minute
+a=int(input("enter time in hour:"))
+print(convertion(a))
+OUTPUT:
+enter time in hour:1
+60
+Find the exponent of a number using Function.
+PROGRAM:
+def power(n,e):
+    res=0
+    for i in range(e):
+        res *= n
+    return res
+print(pow(4,2))
+OUTPUT:
+16
+Convert km to miles and print both the data.
+PROGRAM:
+def KiloToMile(k):
+    return k * 0.621371
+print("Enter Kilometer Value: ", end="")
+km = float(input())
+m = KiloToMile(km)
+print("\n" + str(km) + " Kilometer = " + "{:.2f}".format(m) + " Miles")
+OUTPUT:
+Enter Kilometer Value: 1000
+
+1000.0 Kilometer = 621.37 Miles
+Calculate the area / perimeter of cone using function.
+PROGRAM:
+import math
+def cone(r,s,pi):
+    a=pi * r * s + pi * r * r
+    return a
+r=int(input("Enter r:"))
+s=int(input("Enter s:"))
+pi=int(input("Enter pi:"))
+print("The area of cone is:",cone(r,s,pi))
+def perimeter(R):
+     p=2*3.142*R
+     return p
+R=int(input("Enter R:"))
+print("The perimeter of cone is:",perimeter(R))
+OUTPUT:
+Enter r:2
+Enter s:3
+Enter pi:4
+The area of cone is: 40
+Enter R:2
+The perimeter of cone is: 12.568
+
+
+
+
+
+
+    
+
+    
+
+
