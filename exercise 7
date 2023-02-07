@@ -1,0 +1,129 @@
+1. Create a list for Items present in a Library and and do all the operations on it .
+
+PROGRAM:
+> list1=["Books","Newspapers","Magazines","Periodicals"]
+> list1
+['Books', 'Newspapers', 'Magazines', 'Periodicals']
+> list1[0]
+'Books'
+> list1[-1]
+'Periodicals'
+> list1[1:3]
+['Newspapers', 'Magazines']
+> list1.append("Documents")
+> list1
+['Books', 'Newspapers', 'Magazines', 'Periodicals', 'Documents']
+> list1.extend(["Cds","Maps","Manuscripts"])
+> list1
+['Books', 'Newspapers', 'Magazines', 'Periodicals', 'Documents', 'Cds', 'Maps', 'Manuscripts']
+> list1.sort()
+> list1
+['Books', 'Cds', 'Documents', 'Magazines', 'Manuscripts', 'Maps', 'Newspapers', 'Periodicals']
+> list1.reverse()
+> list1
+['Periodicals', 'Newspapers', 'Maps', 'Manuscripts', 'Magazines', 'Documents', 'Cds', 'Books']
+> list1.count('Periodicals')
+1
+> list1.copy()
+['Periodicals', 'Newspapers', 'Maps', 'Manuscripts', 'Magazines', 'Documents', 'Cds', 'Books']
+> list1.pop(0)
+'Periodicals'
+> list1.pop()
+'Books'
+> list1
+['Newspapers', 'Maps', 'Manuscripts', 'Magazines', 'Documents', 'Cds']
+> list1.remove("Maps")
+> list1
+['Newspapers', 'Manuscripts', 'Magazines', 'Documents', 'Cds']
+> list1.clear()
+> list1
+[]
+
+2. Create a tuple for components of a Car and show all the operations.
+
+PROGRAM:
+> car=("Engine","Battery","Radiator","Brakes")
+> car[0]
+'Engine'
+> car
+('Engine', 'Battery', 'Radiator', 'Brakes')
+> car[-1]
+'Brakes'
+> "Engine" in car 
+True
+> "Brakes" not in car
+False
+> car.count("Brakes")
+1
+> car.index("Brakes")
+3
+> len(car)
+4
+> sorted(car)
+['Battery', 'Brakes', 'Engine', 'Radiator']
+> car
+('Engine', 'Battery', 'Radiator', 'Brakes')
+
+3. Create a set to accept more values and print the elements after removing the duplicate contents.
+
+PROGRAM:
+list=[]
+for i in range(0,5):
+    list.append(i)
+    list.append(4)
+    list.append(5)
+print("Created list which contains dublicate elements:",list)
+x=set(list)
+print("After creating set removes duplicate elements:",x)
+    
+OUTPUT:
+Created list which contains dublicate elements: [0, 4, 5, 1, 4, 5, 2, 4, 5, 3, 4, 5, 4, 4, 5]
+After creating set removes duplicate elements: {0, 1, 2, 3, 4, 5}
+
+4. Write a program to print the specifications of the laptop using dictionary with its operations. 
+
+PROGRAM:
+> dict1={'Name':'Apple laptops','Processor':'Intel Core i5','Memory':'4 GB','Hard Drive':'80 GB hard drive space'}
+> dict1
+{'Name': 'Apple laptops', 'Processor': 'Intel Core i5', 'Memory': '4 GB', 'Hard Drive': '80 GB hard drive space'}
+> dict1.copy()
+{'Name': 'Apple laptops', 'Processor': 'Intel Core i5', 'Memory': '4 GB', 'Hard Drive': '80 GB hard drive space'}
+> dict1.keys()
+dict_keys(['Name', 'Processor', 'Memory', 'Hard Drive'])
+> dict1.get('Name')
+'Apple laptops'
+> dict1.items()
+dict_items([('Name', 'Apple laptops'), ('Processor', 'Intel Core i5'), ('Memory', '4 GB'), ('Hard Drive', '80 GB hard drive space')])
+> dict1.setdefault('Name','Pc Laptops')
+'Apple laptops'
+> dict1.update({'color':'Black'})
+> dict1
+{'Name': 'Apple laptops', 'Processor': 'Intel Core i5', 'Memory': '4 GB', 'Hard Drive': '80 GB hard drive space', 'color': 'Black'}
+> dict1.popitem()
+('color', 'Black')
+> dict1
+{'Name': 'Apple laptops', 'Processor': 'Intel Core i5', 'Memory': '4 GB', 'Hard Drive': '80 GB hard drive space'}
+> dict1.pop('Processor')
+'Intel Core i5'
+> dict1
+{'Name': 'Apple laptops', 'Memory': '4 GB', 'Hard Drive': '80 GB hard drive space'}
+> dict1.clear()
+> dict1
+{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
